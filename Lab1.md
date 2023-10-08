@@ -80,8 +80,6 @@
 
 3. using the command with a path to a file as an argument
 
-![Image](33.png)
-
 - The working directory when the command was run was `/home/lab1/playlist/`
 - The output just contains the contents of the file that we input.
 - There was no error.

@@ -6,7 +6,7 @@
 
 ### **Command `cd`**
 
-1. using the command with no arguments
+Task 1: using the command with no arguments
 
 ![Image](11.png)
 
@@ -14,7 +14,7 @@
 - There was no output since the command is meant to change the directory but no desired directory/location in the filesystem was given.
 - There was no error.
 
-2. using the command with a path to a directory as an argument
+Task 2: using the command with a path to a directory as an argument
 
 ![Image](12.png)
 
@@ -22,7 +22,7 @@
 - I got this output because the working directory was changed to `/home/lab1/playlist/`, as is seen in the second line on the terminal.
 - There was no error.
 
-3. using the command with a path to a file as an argument
+Task 3: using the command with a path to a file as an argument
 
 ![Image](13.png)
 
@@ -34,7 +34,7 @@
 
 ### **Command `ls`**
 
-1. using the command with no arguments
+Task 1: using the command with no arguments
 
 ![Image](21.png)
 
@@ -42,7 +42,7 @@
 - The output lists the files/directories in the working directory. In this case it was just another directory called `playlist`.
 - There was no error.
 
-2. using the command with a path to a directory as an argument
+Task 2: using the command with a path to a directory as an argument
 
 ![Image](22.png)
 
@@ -50,7 +50,7 @@
 - The output lists the files/directories in the directory that was input i.e. `/playlist` in the working one. In this case there were files called `song1.txt`,`song2.class` and `song2.java`.
 - There was no error.
 
-3. using the command with a path to a file as an argument
+Task 3: using the command with a path to a file as an argument
 
 ![Image](23.png)
 
@@ -62,7 +62,7 @@
 
 ### **Command `cat`**
 
-1. using the command with no arguments
+Task 1: using the command with no arguments
 
 ![Image](31.png)
 
@@ -70,7 +70,7 @@
 - The terminal reads your input and prints it back.
 - There was no error.
 
-2. using the command with a path to a directory as an argument
+Task 2: using the command with a path to a directory as an argument
 
 ![Image](32.png)
 
@@ -78,7 +78,7 @@
 - The output informs us that what we input was a directory and not a file whose contents could be printed out.
 - There was an error, since we input a directory instead of a file. This command needs a file in order to print its contents.
 
-3. using the command with a path to a file as an argument
+Task 3: using the command with a path to a file as an argument
 
 ![Image](33(2).png)
 

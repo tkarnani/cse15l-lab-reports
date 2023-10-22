@@ -85,3 +85,12 @@ The images above show that:
 ![Image](nop.png)
 
 In the screenshots above, I log into ieng6 with my CSE 15L account on my own device without being asked for a password.
+
+---
+
+## **Part 3**
+
+Some new things that I learnt in lab these past two weeks were:
+- I didn't know exactly what ports are before the week 2 lab.
+- I knew about remote servers and an overview of the process of running one on your device, but never actually having done it before, the labs were extremely interesting.
+- I never realized that codes for running any server/website would be taking in the URL/URI and considering all the different possible valid inputs that the user can put onto the search bar (usually by clicking on something else on the pervious page). I wonder if there are more efficient ways of handling this and working on queries than thousands of if-statements.

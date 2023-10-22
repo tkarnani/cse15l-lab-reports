@@ -74,8 +74,6 @@ This is how I got the server running from the terminal
 
 ## **Part 2**
 
-Using the command line, show with ls and take screenshots of:
-
 ![Image](pathh.png)
 ![Image](path.png)
 

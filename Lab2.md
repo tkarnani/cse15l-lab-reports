@@ -6,64 +6,7 @@
 
 ## **Part 1**
 
-### This is the code for Server.java
-
-```
-// A simple web server using Java's built-in HttpServer
-// Examples from https://dzone.com/articles/simple-http-server-in-java were useful references
-
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.InetSocketAddress;
-import java.net.URI;
-
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpServer;
-
-interface URLHandler {
-    String handleRequest(URI url);
-}
-
-class ServerHttpHandler implements HttpHandler {
-    URLHandler handler;
-    ServerHttpHandler(URLHandler handler) {
-      this.handler = handler;
-    }
-    public void handle(final HttpExchange exchange) throws IOException {
-        // form return body after being handled by program
-        try {
-            String ret = handler.handleRequest(exchange.getRequestURI());
-            // form the return string and write it on the browser
-            exchange.sendResponseHeaders(200, ret.getBytes().length);
-            OutputStream os = exchange.getResponseBody();
-            os.write(ret.getBytes());
-            os.close();
-        } catch(Exception e) {
-            String response = e.toString();
-            exchange.sendResponseHeaders(500, response.getBytes().length);
-            OutputStream os = exchange.getResponseBody();
-            os.write(response.getBytes());
-            os.close();
-        }
-    }
-}
-
-public class Server {
-    public static void start(int port, URLHandler handler) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
-
-        //create request entrypoint
-        server.createContext("/", new ServerHttpHandler(handler));
-
-        //start the server
-        server.start();
-        System.out.println("Server Started!");
-    }
-}
-```
-
-### This is the code for StringServer.java
+This is the code for StringServer.java
 
 ```
 import java.io.IOException;
@@ -103,7 +46,43 @@ class StringServer {
 }
 ```
 
-### This is how I got the server running from the terminal
+This is how I got the server running from the terminal
 
 ![Image](startserver.png)
 
+### Using /add-message
+
+![Image](word.png)
+
+- The method that was called was handleRequest and the main method was run.
+- The argument passed into the method is the URL. The relevant fields for our purposes of adding it to the output string are only the parameters added in after "/add-message?s=". So in this case, it was `String "Geisel"`.
+- The value didn't change, it remained a string since it was to be added to the larger string that our server was printing.
+
+![Image](number.png)
+
+- The method that was called was handleRequest and the main method was run.
+- The argument passed into the method is the URL. The relevant fields for our purposes of adding it to the output string are only the parameters added in after "/add-message?s=". So in this case, it was `int 7`.
+- The value changed to a string since it was to be added to the larger string that our server was printing.
+
+![Image](URI.png)
+
+- The method that was called was handleRequest and the main method was run.
+- The argument passed into the method is the URL. The relevant fields for our purposes of adding it to the output string are only the parameters added in after "/add-message?s=". So in this case, it was `URI https://youtube.come`.
+- The value changed to a string since it was to be added to the larger string that our server was printing.
+
+---
+
+## **Part 2**
+
+Using the command line, show with ls and take screenshots of:
+
+![Image](path.png)
+![Image](pathh.png)
+
+The images above show that:
+- the path to the private key for my SSH key for logging into ieng6 (on my computer or on the home directory of the lab computer) is `/Users/tushakarnani/.ssh/id_rsa`.
+- the path to the public key for my SSH key for logging into ieng6 (within my account on ieng6) is `/Users/tushakarnani/.ssh/id_rsa.pub`.
+
+![Image](nopassword.png)
+
+In the abover screenshot, I log into ieng6 with my CSE 15L account on my own device without being asked for a password.

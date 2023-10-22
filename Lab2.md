@@ -54,19 +54,19 @@ This is how I got the server running from the terminal
 
 ![Image](word.png)
 
-- The method that was called was handleRequest and the main method was run.
+- The `handleRequest` method was called and the main method was run.
 - The argument passed into the method is the URL. The relevant fields for our purposes of adding it to the output string are only the parameters added in after "/add-message?s=". So in this case, it was `String "Geisel"`.
 - The value didn't change, it remained a string since it was to be added to the larger string that our server was printing.
 
 ![Image](number.png)
 
-- The method that was called was handleRequest and the main method was run.
+- The `handleRequest` method was called and the main method was run.
 - The argument passed into the method is the URL. The relevant fields for our purposes of adding it to the output string are only the parameters added in after "/add-message?s=". So in this case, it was `int 7`.
 - The value changed to a string since it was to be added to the larger string that our server was printing.
 
 ![Image](URI.png)
 
-- The method that was called was handleRequest and the main method was run.
+- The `handleRequest` method was called and the main method was run.
 - The argument passed into the method is the URL. The relevant fields for our purposes of adding it to the output string are only the parameters added in after "/add-message?s=". So in this case, it was `URI https://youtube.come`.
 - The value changed to a string since it was to be added to the larger string that our server was printing.
 
@@ -76,13 +76,14 @@ This is how I got the server running from the terminal
 
 Using the command line, show with ls and take screenshots of:
 
-![Image](path.png)
 ![Image](pathh.png)
+![Image](path.png)
 
 The images above show that:
 - the path to the private key for my SSH key for logging into ieng6 (on my computer or on the home directory of the lab computer) is `/Users/tushakarnani/.ssh/id_rsa`.
 - the path to the public key for my SSH key for logging into ieng6 (within my account on ieng6) is `/Users/tushakarnani/.ssh/id_rsa.pub`.
 
 ![Image](nopassword.png)
+![Image](nop.png)
 
-In the abover screenshot, I log into ieng6 with my CSE 15L account on my own device without being asked for a password.
+In the screenshots above, I log into ieng6 with my CSE 15L account on my own device without being asked for a password.

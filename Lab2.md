@@ -76,10 +76,11 @@ This is how I got the server running from the terminal
 
 ![Image](pathh.png)
 ![Image](path.png)
+![Image](keypub.png)
 
 The images above show that:
 - the path to the private key for my SSH key for logging into ieng6 (on my computer or on the home directory of the lab computer) is `/Users/tushakarnani/.ssh/id_rsa`.
-- the path to the public key for my SSH key for logging into ieng6 (within my account on ieng6) is `/Users/tushakarnani/.ssh/id_rsa.pub`.
+- the path to the public key for my SSH key for logging into ieng6 (within my account on ieng6) is `/home/linux/ieng6/cs15lfa23/cs15lfa23ni/.ssh/authorized_keys`.
 
 ![Image](nopassword.png)
 ![Image](nop.png)

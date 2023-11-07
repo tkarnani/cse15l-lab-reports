@@ -6,7 +6,7 @@
 
 ## **Part 1**
 
-### 'reversed' method for arrays
+### `reversed` method for arrays
 
 **A failure inducing input**
 ```
@@ -60,3 +60,10 @@ static int[] reversed(int[] arr) {
 
 The code was initially adding elements from the new array into the old one instead of the other way around.
 Changing the line of code inside the for loop to 'newArray[i] = arr[arr.length - i - 1];' and returning that array fixed the bug.
+
+---
+
+## **Part 2**
+
+### `grep` command
+

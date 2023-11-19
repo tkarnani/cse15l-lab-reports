@@ -155,7 +155,8 @@ technical/plos/pmed.0020016.txt:         The regional models were calibrated as 
 While in the `technical` directory, I used `grep -r -n` on a file in the `technical` directory for the phrase "options". It recursively searched for the phrase. It returned all the line numbers of the lines containing the word for every file in the directory.
 
 ```
-tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -n "options" technical/government/About_LSC/State_Planning_Report.txt 
+tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -n "options" technical/government/About_LSC/
+					      State_Planning_Report.txt 
 1898:options;
 2064:client and community education, and expansion of pro se options.
 2711:and responsibilities and their options for complying with those

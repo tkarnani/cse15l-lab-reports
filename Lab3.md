@@ -67,7 +67,9 @@ Changing the line of code inside the for loop to 'newArray[i] = arr[arr.length -
 
 ### `grep` command
 
-## -r to search for words in files recursively
+## -r to recursively search for phrases
+
+Source : Lectures and Labs
 
 **on a directory**
 
@@ -89,3 +91,27 @@ tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -r "plausible range" technica
 technical/plos/pmed.0020016.txt:         The regional models were calibrated as follows: first, plausible
 					 ranges were specified
 ```
+
+## -c to count the number of occurences of a word
+
+Source : [Website to Grep commands in Linux](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/#:~:text=Grep%20is%20a%20useful%20command,a%20powerful%20command%20to%20use.)
+
+**on a directory**
+
+While in the `docsearch` directory, I used `grep -c` on the `technical` directory for the phrase "microscopy". This caused an error because technical is a directory and not a file.
+
+```
+tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -c "microscopy" technical
+grep: technical: Is a directory
+```
+
+**on a file**
+
+While in the `docsearch` directory, I used `grep -c` on a file in the `technical` directory for the phrase "microscopy".
+
+```
+tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -c "microscopy" technical/biomed/1471-2121-3-11.txt
+5
+```
+
+While in the `technical` directory, I used `grep -r -c` on a file in the `technical` directory for the phrase "microscopy". It recursively searched

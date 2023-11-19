@@ -67,3 +67,25 @@ Changing the line of code inside the for loop to 'newArray[i] = arr[arr.length -
 
 ### `grep` command
 
+## -r to search for words in files recursively
+
+**on a directory**
+
+While in the `docsearch` directory, I used `grep -r` on the `technical` directory for the phrase "plausible range".
+
+```
+tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -r "plausible range" technical
+technical/plos/pmed.0020016.txt:         The regional models were calibrated as follows: first, plausible
+					 ranges were specified
+technical/biomed/1471-2288-3-9.txt:      no statement of uncertainty or a plausible range of
+```
+
+**on a file** 
+
+While in the `docsearch` directory, I used `grep -r` on a file in the `technical` directory for the phrase "plausible range" (that I already knew contained the phrase).
+
+```
+tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -r "plausible range" technical/plos/pmed.0020016.txt
+technical/plos/pmed.0020016.txt:         The regional models were calibrated as follows: first, plausible
+					 ranges were specified
+```

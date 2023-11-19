@@ -152,7 +152,7 @@ technical/plos/pmed.0020016.txt:         The regional models were calibrated as 
 					 ranges were specified
 ```
 
-While in the `technical` directory, I used `grep -r -n` on a file in the `technical` directory for the phrase "options". It recursively searched for the phrase. It returned all the line numbers of the lines containing the word for every file in the directory.
+While in the `technical` directory, I used `grep -r -n` on a file in the `technical` directory for the phrase "options". It recursively searched for the phrase. It returned all the line numbers of the lines in the file containing the word.
 
 ```
 tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -n "options" technical/government/About_LSC/

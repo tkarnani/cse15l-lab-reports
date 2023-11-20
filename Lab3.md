@@ -16,6 +16,13 @@
     assertArrayEquals(new int[]{ 3, 2 }, ArrayExamples.reversed(input1));
   }
 ```
+```
+@Test
+	public void testReversed3() {
+    int[] input1 = { 2, 3, 4 };
+    assertArrayEquals(new int[]{ 4, 3, 2 }, ArrayExamples.reversed(input1));
+  }
+```
 
 **An input that doesn't induce failure**
 ```
@@ -34,7 +41,7 @@
 
 **The bug**
 
-This is the inital buggy code provided.
+This is the inital buggy code provided:
 
 ```
 static int[] reversed(int[] arr) {
@@ -46,7 +53,7 @@ static int[] reversed(int[] arr) {
   }
 ```
 
-The is the code after fixing the bug.
+The is the code after fixing the bug:
 
 ```
 static int[] reversed(int[] arr) {
@@ -59,7 +66,7 @@ static int[] reversed(int[] arr) {
 ```
 
 The code was initially adding elements from the new array into the old one instead of the other way around.
-Changing the line of code inside the for loop to 'newArray[i] = arr[arr.length - i - 1];' and returning that array fixed the bug.
+Changing the line of code inside the for loop from `arr[i] = newArray[arr.length - i - 1];` to `newArray[i] = arr[arr.length - i - 1];` and returning `newArray` fixed the bug.
 
 ---
 
@@ -84,7 +91,7 @@ technical/biomed/1471-2288-3-9.txt:      no statement of uncertainty or a plausi
 
 **Example b: on a file** 
 
-While in the `docsearch` directory, I used `grep -r` on a file in the `technical` directory for the phrase "plausible range" (that I already knew contained the phrase).
+While in the `docsearch` directory, I used `grep -r` on a file in the `technical` directory (that I already knew contained the phrase) for the phrase "plausible range".
 
 ```
 tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -r "plausible range" technical/plos/pmed.0020016.txt
@@ -107,14 +114,14 @@ grep: technical: Is a directory
 
 **Example b: on a file**
 
-While in the `docsearch` directory, I used `grep -c` on a file in the `technical` directory for the phrase "microscopy".
+While in the `docsearch` directory, I used `grep -c` on a file in the `technical` directory for the phrase "microscopy". This returned `5` which is the number of times the word is present in the file.
 
 ```
 tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -c "microscopy" technical/biomed/1471-2121-3-11.txt
 5
 ```
 
-While in the `technical` directory, I used `grep -r -c` on a file in the `technical` directory for the phrase "microscopy". It recursively searched for and counted the number of occurences of the phrase in all the files in the directory. It shows the count number for every file separately.
+While in the `technical` directory, I used `grep -r -c` on the `technical/biomed` directory for the phrase "microscopy". It recursively searched for and counted the number of occurences of the phrase in all the files in the directory. It shows the count number for every file separately.
 
 ```
 tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -r -c "microscopy" technical/biomed
@@ -144,15 +151,8 @@ grep: technical: Is a directory
 
 **Example b: on a file**
 
-While in the `docsearch` directory, I used `grep -n` on a file in the `technical` directory for the phrase "plausible range" (that I already knew contained the phrase).
-
-```
-tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -r "plausible range" technical/plos/pmed.0020016.txt
-technical/plos/pmed.0020016.txt:         The regional models were calibrated as follows: first, plausible
-					 ranges were specified
-```
-
-While in the `technical` directory, I used `grep -r -n` on a file in the `technical` directory for the phrase "options". It recursively searched for the phrase. It returned all the line numbers of the lines in the file containing the word.
+While in the `docsearch` directory, I used `grep -n` on a file in the `technical` directory for the phrase "options". It returned all the line numbers of the lines that contained the word.
+We can also use this recursively for every file in a directory using `grep -r -n`.
 
 ```
 tushakarnani@Tushas-MacBook-Air-2 docsearch % grep -n "options" technical/government/About_LSC/

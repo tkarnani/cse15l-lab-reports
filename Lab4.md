@@ -30,7 +30,7 @@ I simply had to press the *`<up>`* key once since the last and only command I ra
 ![Image](2.png)
 *Keys I pressed: `git clone` `Ctrl+V` `enter`*
 
-I copied the SSH URL from my forked repository and pasted it onto my command line.
+I copied the SSH URL from my forked repository and pasted it onto my command line. This copied the existing Git repository into my local machine (in the working directory).
 
 ### **Step 6:**
 
@@ -43,7 +43,7 @@ The first command navigated to the cloned directory. The next searched for and r
 
 ![Image](5.png)
 ![Image](6.png)
-*Keys I pressed: `Ctrl+R` `vim` `<enter>` then `:44` then `e` then `x` then `i` then `2` then `:wq!`*
+*Keys I pressed: `Ctrl+R` `vim` `<enter>` then `:44` `<enter>` then `e` then `x` then `i` then `2` then `<esc>` then `:wq!`*
 
 This took me to the file to edit, which was ListExamples.java. The rest of the commands I ran on the vim editor were a part of the process to edit the file i.e. to change "index1" to "index2". 
 

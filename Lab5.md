@@ -28,6 +28,9 @@ This is an example of what a java script for a student looks like :
 
 #### *Teaching Assistant* (_13 hours ago in Labs_)
 
+Hi, thanks for providing all the code and context.
+
+You're right, your problem does have to with the worstpossiblescore variable and its initialization. Look at where you initialize it and where its value is edited after that. Focus on the local scopes of variables; (_wink wink_).
 
 ---
 

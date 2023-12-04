@@ -43,9 +43,9 @@ The first command navigated to the cloned directory. The next searched for and r
 
 ![Image](5.png)
 ![Image](6.png)
-*Keys I pressed: `Ctrl+R` `vim` `<enter>` then `:44` `<enter>` then `e` then `x` then `i` then `2` then `<esc>` then `:wq!`*
+*Keys I pressed: `Ctrl+R` `vim` `<enter>` then `:44` `<enter>` then `e` then `x` then `i` then `2` then `<esc>` then `:wq!` `<enter>`*
 
-This took me to the file to edit, which was ListExamples.java. The rest of the commands I ran on the vim editor were a part of the process to edit the file i.e. to change "index1" to "index2". 
+This took me to the file to edit, which was ListExamples.java. The rest of the commands I ran on the vim editor were a part of the process to edit the file i.e. to change "index1" to "index2". `:44` `<enter>` took me to line 44, `e` took me to the end of the word, `x` deletes the "1", `i` enters editing mode, then add "2" instead, `<esc>` goes to normal mode and `:wq!` saves and quits vim.
 
 ### **Step 8:**
 
